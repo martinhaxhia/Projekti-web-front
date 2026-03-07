@@ -1,13 +1,11 @@
 import { useState } from 'react';
 import API from '../api';
-
 const Register = () => {
-    const [form, setForm] = useState({ name: '', email: '', password: '' });
-
+    const [form, setForm] = useState({ name:'', email:'', password:'' });
+    
     const handleChange = (e) => {
         setForm({ ...form, [e.target.name]: e.target.value });
-    };
-
+    };                  
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
@@ -19,7 +17,6 @@ const Register = () => {
             alert(err.response?.data?.msg || "Something went wrong");
         }
     };
-    
     return (
         <div>
             <h2>Register</h2>
