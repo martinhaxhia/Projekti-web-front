@@ -23,6 +23,7 @@ const GetProduct = () => {
     return (
         <div>
             <h2>Products List</h2>
+            <h2> Lista e produkteve</h2>
 
             <Link to="/addProduct">Add New Product</Link>
 

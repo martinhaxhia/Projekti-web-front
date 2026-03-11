@@ -17,6 +17,7 @@ const GetUsers = () => {
     return (
         <div>
             <h2>Users List</h2>
+            <h1>Lista e përdoruesve</h1>
             <ul>
                 {users.map((user) => (
                     <li key={user.id}>{user.name} - {user.email}</li>
