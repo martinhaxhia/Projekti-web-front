@@ -34,7 +34,7 @@ const GetProduct = () => {
 
                         <p>${product.price}</p>
 
-                        <img src={`http://localhost:5000/uploads/${product.media[0].image_path}`} />
+                        <img src={`http://localhost:5000/uploads/${product.media[0].image_path}`} alt='image'/>
 
                     </li>
                 ))}
